@@ -8,7 +8,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0rem 3rem 1rem 3rem;
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 200;
   color: black;
 }
@@ -38,10 +38,11 @@ body {
 a {
   color: black;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 h1, h2, .h2_classic {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
@@ -102,18 +103,19 @@ h3 {
 
 @media only screen and (max-width:480px) {
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
   }
 }
 
 p {
   font-size: 1.1rem;
   font-weight: lighter;
-  line-height: 1.4rem;
+  line-height: 1.7rem;
 }
 
 .legend {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -134,13 +136,13 @@ p {
 
 @media only screen and (max-width:480px) {
   .line {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
   }
 }
 
 .button {
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   padding: 0.7rem;
   color: #000;
   border: 1px solid #000;
@@ -194,6 +196,12 @@ p {
 }
 
 @media only screen and (max-width:768px) {
+
+  .CTA {
+    margin-top: 4rem;
+
+  }
+
   .mobile_only {
     display: block;
   }
@@ -293,7 +301,7 @@ nav a {
     #jumbotron {
       min-height: 500px;
       /* parallax effect */
-      background-attachment: scroll;
+      /* background-attachment: scroll; */
     }
 }
 
@@ -318,6 +326,9 @@ nav a {
   justify-content: space-around;
   margin-left: 6rem;
   margin-right: 6rem;
+  /* box-shadow:0 3px 20px 0 rgba(0,0,0,.1);
+  border-radius: 0.2rem;
+  padding: 2rem; */
 }
 
 .picto {
@@ -329,18 +340,19 @@ nav a {
 .pictogrammes img {
   width: 4rem;
   height: 4rem;
-  margin: -0.5rem;
+  /* margin: -0.5rem; */
 }
 
 .numbers {
-  font-size: 1.4rem;
-  margin: -0.5rem;
+  font-size: 1.6rem;
+  margin: 0.8rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .pictogrammes {
     margin-left: 3rem;
     margin-right: 3rem;
+    flex-wrap: wrap;
   }
 
   .picto {
@@ -356,17 +368,17 @@ nav a {
   }
 
   .picto {
-    margin: 2rem;
+    /* margin: 2rem; */
   }
 
   .pictogrammes img {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   .numbers {
     font-size: 1.4rem;
-    margin: -0.5rem;
+    margin: 0.5rem;
   }
 }
 
@@ -392,6 +404,8 @@ nav a {
 .img_container img {
   width: 100%;
   height: auto;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .article p {
@@ -437,9 +451,11 @@ nav a {
 
 #map {
     width: 40%;
-    height: 350px;
+    height: 430px;
     display: inline-block;
     margin-top: 1rem;
+    box-shadow:0 3px 20px 0 rgba(0,0,0,.1);
+    border-radius: 0.2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -457,7 +473,9 @@ nav a {
 .note {
   font-style: italic;
   margin-left: 2rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+
 }
 
 .quotes {
@@ -467,20 +485,25 @@ nav a {
 }
 
 .quote {
-  /* border: 1px solid black; */
+  /* border: 1px solid #6F99CC; */
   margin: 0rem 2rem 0rem 2rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+  border-radius: 0.2rem;
+  padding: 2rem;
 }
 
 .abstract {
-  font-family: serif;
-  font-style: italic;
-  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  /* font-style: italic; */
+  font-size: 1.6rem;
   padding: 1rem 0 1rem 0;
+  line-height: 2rem;
 }
 
 .author {
   padding: 1rem 0 1rem 0;
   font-style: italic;
+  font-size: 1.1rem;
 }
 
 .invisible {
@@ -490,6 +513,8 @@ nav a {
 /* Reservation */
 
 .reservation {
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
   background-image: url('../images/background-image-bottom.jpg');
   background-size: cover;
   background-position: center;
@@ -578,6 +603,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .small_images_left {
@@ -595,6 +622,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .image_bottom_left {
@@ -604,6 +633,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .image_top_left img, .image_bottom_left img {
@@ -624,6 +655,10 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .small_images_right {
@@ -641,6 +676,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .image_bottom_right {
@@ -650,6 +687,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .image_top_right img, .image_bottom_right img {
@@ -669,6 +708,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .fifty_right_image {
@@ -678,6 +719,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   margin-left: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
 }
 
 .fifty_left_image img, .fifty_right_image img {
@@ -847,6 +890,7 @@ footer {
 footer .logo {
   margin-left: -2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width:1024px) {
