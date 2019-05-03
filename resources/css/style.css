@@ -590,21 +590,13 @@ nav a {
   top: 30px;
 }
 
+
+/* Left Universal */
+
 .left {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
-}
-
-.big_image_left {
-  width: 60%;
-  background-image: url('../images/gallerie/chair.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
 }
 
 .small_images_left {
@@ -615,9 +607,22 @@ nav a {
   margin-left: 1.5rem;
 }
 
-.image_top_left {
+/* Left Top */
+
+.big_image_left_top {
+  width: 60%;
+  background-image: url('../images/gallerie/chambre-principale.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.image_top_left_top {
   height: 50%;
-  background-image: url('../images/gallerie/foutas.JPG');
+  background-image: url('../images/gallerie/maison.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -626,9 +631,9 @@ nav a {
   border-radius: 0.2rem;
 }
 
-.image_bottom_left {
+.image_bottom_left_top {
   height: 50%;
-  background-image: url('../images/gallerie/dependence-entrance.JPG');
+  background-image: url('../images/gallerie/véranda.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -637,28 +642,16 @@ nav a {
   border-radius: 0.2rem;
 }
 
-.image_top_left img, .image_bottom_left img {
+.image_top_left_top img, .image_bottom_left_top img {
   opacity: 0;
 }
+
+/* Right Universal */
 
 .right {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
-}
-
-
-.big_image_right {
-  width: 60%;
-  background-image: url('../images/gallerie/room-chair.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
 }
 
 .small_images_right {
@@ -669,9 +662,24 @@ nav a {
   margin-right: 1.5rem;
 }
 
-.image_top_right {
+/* Right Top */
+
+.big_image_right_top {
+  width: 60%;
+  background-image: url('../images/gallerie/Studio-lit.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.image_top_right_top {
   height: 50%;
-  background-image: url('../images/background-image.JPG');
+  background-image: url('../images/gallerie/Studio-entrée.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -680,9 +688,9 @@ nav a {
   border-radius: 0.2rem;
 }
 
-.image_bottom_right {
+.image_bottom_right_top {
   height: 50%;
-  background-image: url('../images/background-image.JPG');
+  background-image: url('../images/gallerie/Entrée.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -691,9 +699,12 @@ nav a {
   border-radius: 0.2rem;
 }
 
-.image_top_right img, .image_bottom_right img {
+.image_top_right_top img, .image_bottom_right_top img {
   opacity: 0;
 }
+
+
+/* Fifty Universal */
 
 .fifty {
   margin-top: 3rem;
@@ -701,9 +712,11 @@ nav a {
   justify-content: space-between;
 }
 
-.fifty_left_image {
+/* Fifty Top */
+
+.fifty_left_image_top {
   width: 50%;
-  background-image: url('../images/background-image.JPG');
+  background-image: url('../images/gallerie/Studio-attenant-entree.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -712,9 +725,9 @@ nav a {
   border-radius: 0.2rem;
 }
 
-.fifty_right_image {
+.fifty_right_image_top {
   width: 50%;
-  background-image: url('../images/background-image.JPG');
+  background-image: url('../images/gallerie/Studio-attenant-vue-exterieure.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -723,10 +736,80 @@ nav a {
   border-radius: 0.2rem;
 }
 
-.fifty_left_image img, .fifty_right_image img {
+.fifty_left_image_top img, .fifty_right_image_top img {
   opacity: 0;
   min-height: 600px;
 }
+
+/* Left Bottom */
+
+.big_image_left_bottom {
+  width: 60%;
+  background-image: url('../images/gallerie/Vue-piscine.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.image_top_left_bottom {
+  height: 50%;
+  background-image: url('../images/gallerie/Salon-cheminée.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.image_bottom_left_bottom {
+  height: 50%;
+  background-image: url('../images/gallerie/Salon-terrasse.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.image_top_left_bottom img, .image_bottom_left_bottom img {
+  opacity: 0;
+}
+
+/* Fifty Bottom */
+
+.fifty_left_image_bottom {
+  width: 50%;
+  background-image: url('../images/gallerie/Vue-terrasse.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.fifty_right_image_bottom {
+  width: 50%;
+  background-image: url('../images/gallerie/Plongeoir.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.5rem;
+  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
+  border-radius: 0.2rem;
+}
+
+.fifty_left_image_bottom img, .fifty_right_image_bottom img {
+  opacity: 0;
+  min-height: 600px;
+}
+
+/* Media only */
 
 @media only screen and (max-width:1024px) {
   .left {
