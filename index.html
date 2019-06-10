@@ -122,7 +122,9 @@
         <p>Gares TGV : les Arcs-Draguignan, Toulon ou St Raphaël avec liaisons bus pour La Croix-Valmer (3€/trajet)</p></p>
       </div>
 
-      <div id="map"></div>
+      <!-- <div id="map"></div> -->
+
+      <iframe id= "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11635.01660898041!2d6.589473231968459!3d43.19366911623359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cec596cb91d6ef%3A0xa94fe4957665fa49!2sGigaro%2C+83420+La+Croix-Valmer!5e0!3m2!1sfr!2sfr!4v1560160284973!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </div>
 
@@ -189,17 +191,19 @@
 
 
 <!-- Scripts -->
-    <script>
+    <!-- <script>
       var map;
+      var gigaro = {lat: -25.344, lng: 131.036};
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 43.186638, lng: 6.591778},
-          zoom: 12
-        });
+          zoom: 12}
+        var marker = new google.maps.Marker({position: gigaro, map: map});
+);
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8wTbjhbsPyxXSbNYIf5MbIt1TvSFuprU&callback=initMap"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+        async defer></script> -->
 
   </body>
 </html>
