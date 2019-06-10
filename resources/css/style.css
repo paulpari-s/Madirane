@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   padding: 0rem 3rem 1rem 3rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   color: black;
 }
 
@@ -46,7 +46,7 @@ h1, h2, .h2_classic {
 }
 
 h1 {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #4a4a4a;
   line-height: 80px;
   font-size: 3.5rem;
@@ -220,7 +220,7 @@ header {
   z-index: 1;
   position: relative;
   top: 3rem;
-  font-family: 'Avenir', sans-serif;
+  /* font-family: 'Avenir', sans-serif; */
   font-weight: 200;
 }
 
@@ -449,7 +449,7 @@ nav a {
   display: inline-block;
 }
 
-#map {
+#google_map {
     width: 40%;
     height: 430px;
     display: inline-block;
@@ -463,7 +463,7 @@ nav a {
     width: 100%;
   }
 
-  #map {
+  #google_map {
       display: none;
   }
 }
