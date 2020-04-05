@@ -88,11 +88,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 100;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  line-height: 35px;
+  letter-spacing: 0px;
+  line-height: 1.8rem;
 }
 
 @media only screen and (max-width:1024px) {
@@ -207,7 +207,7 @@ p {
   }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:760px) {
   .desktop_tablet_only {
     display: none;
   }
@@ -314,7 +314,7 @@ nav a {
   padding: 3rem 0 3rem 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .subtitle {
     width: 80%;
     padding: 1rem 0 1rem 0;
@@ -408,6 +408,18 @@ nav a {
   border-radius: 0.2rem;
 }
 
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.25), 0 8px 30px 0 rgba(0, 0, 0, 0.24);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
 .article p {
   margin-right: 1rem;
 }
@@ -424,6 +436,10 @@ nav a {
     margin-right: -1rem;
   }
 
+  .gallerie .img_container {
+    padding: 0.5rem;
+  }
+
   .article p {
     display: none;
   }
@@ -432,8 +448,6 @@ nav a {
     margin-left: 0rem;
   }
 }
-
-
 
 /* Localisation */
 
@@ -587,376 +601,49 @@ nav a {
 
 .images {
   position: relative;
-  top: 30px;
+  top: 60px;
 }
 
-
-/* Left Universal */
+.row {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 .left {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
+  width: 50%;
+  margin-right: 1rem;
 }
-
-.small_images_left {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 1.5rem;
-}
-
-/* Left Top */
-
-.big_image_left_top {
-  width: 60%;
-  background-image: url('../images/gallerie/chambre-principale.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_top_left_top {
-  height: 50%;
-  background-image: url('../images/gallerie/maison.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_bottom_left_top {
-  height: 50%;
-  background-image: url('../images/gallerie/véranda.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_top_left_top img, .image_bottom_left_top img {
-  opacity: 0;
-}
-
-/* Right Universal */
 
 .right {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.small_images_right {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 1.5rem;
-}
-
-/* Right Top */
-
-.big_image_right_top {
-  width: 60%;
-  background-image: url('../images/gallerie/Studio-lit.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_top_right_top {
-  height: 50%;
-  background-image: url('../images/gallerie/Studio-entree.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_bottom_right_top {
-  height: 50%;
-  background-image: url('../images/gallerie/Entree.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_top_right_top img, .image_bottom_right_top img {
-  opacity: 0;
-}
-
-
-/* Fifty Universal */
-
-.fifty {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Fifty Top */
-
-.fifty_left_image_top {
   width: 50%;
-  background-image: url('../images/gallerie/Studio-attenant-entree.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.fifty_right_image_top {
-  width: 50%;
-  background-image: url('../images/gallerie/Studio-attenant-vue-exterieure.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.fifty_left_image_top img, .fifty_right_image_top img {
-  opacity: 0;
-  min-height: 600px;
-}
-
-/* Left Bottom */
-
-.big_image_left_bottom {
-  width: 60%;
-  background-image: url('../images/gallerie/Vue-piscine.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_top_left_bottom {
-  height: 50%;
-  background-image: url('../images/gallerie/Salon-cheminee.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_bottom_left_bottom {
-  height: 50%;
-  background-image: url('../images/gallerie/Salon-terrasse.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.image_top_left_bottom img, .image_bottom_left_bottom img {
-  opacity: 0;
-}
-
-/* Fifty Bottom */
-
-.fifty_left_image_bottom {
-  width: 50%;
-  background-image: url('../images/gallerie/Vue-terrasse.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.fifty_right_image_bottom {
-  width: 50%;
-  background-image: url('../images/gallerie/Plongeoir.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 1.5rem;
-  box-shadow: 0 3px 20px 0 rgba(0,0,0,.2);
-  border-radius: 0.2rem;
-}
-
-.fifty_left_image_bottom img, .fifty_right_image_bottom img {
-  opacity: 0;
-  min-height: 600px;
+  margin-left: 1rem;
 }
 
 /* Media only */
 
 @media only screen and (max-width:1024px) {
-  .left {
-    margin-top: 2rem;
-  }
-
-  .big_image_left {
-    margin-right: 1rem;
-  }
-
-  .small_images_left {
-    margin-left: 1rem;
-  }
-
-  .image_top_left {
-    margin-bottom: 1rem;
-  }
-
-  .image_bottom_left {
-    margin-top: 1rem;
-  }
-
-
-  .right {
-    margin-top: 2rem;
-  }
-
-
-  .big_image_right {
-    margin-left: 1rem;
-  }
-
-  .small_images_right {
-    margin-right: 1rem;
-  }
-
-  .image_top_right {
-    margin-bottom: 1rem;
-  }
-
-  .image_bottom_right {
-    margin-top: 1rem;
-  }
-
-  .fifty {
-    margin-top: 2rem;  }
-
-  .fifty_left_image {
-    margin-right: 1rem;
-    max-height: 400px;
-  }
-
-  .fifty_right_image {
-    margin-left: 1rem;
-    max-height: 400px;
-
-  }
-}
-
-@media only screen and (min-width:480px) {
-  .big_image_left  img {
-    display: none;
-  }
-}
-
-@media only screen and (max-width:480px) {
   .images {
-    margin-top: 3rem;
+    position: relative;
+    top: 100px;
   }
 
+  .row {
+    display: inline-block;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
   .left {
-    margin-top: 1rem;
-    display: block;
-  }
-
-  .big_image_left {
     width: 100%;
-    margin-right: 0rem;
-    min-height: 300px;
-    margin-bottom: 1rem;
+    margin: auto;
+    padding-bottom: 1rem;
   }
-
-  .small_images_left {
-    width: 100%;
-    display: block;
-    margin-left: 0rem;
-  }
-
-  .image_top_left {
-    height: 100%;
-  }
-
-  .image_bottom_left {
-    height: 100%;
-  }
-
   .right {
-    margin-top: 1rem;
-    display: block;
-  }
-
-  .big_image_right {
     width: 100%;
-    margin-right: 0rem;
-  }
-
-  .small_images_right {
-    width: 100%;
-    display: block;
-    margin-right: 0rem;
-  }
-
-  .image_top_right {
-    height: 100%;
-  }
-
-  .image_bottom_right {
-    height: 100%;
-    margin-top: 1rem;
-  }
-
-  .fifty {
-    margin-top: 1rem;
-    display: block;
-  }
-
-  .fifty_left_image {
-    width: 100%;
-    margin-right: 0rem;
-  }
-
-  .fifty_right_image {
-    width: 100%;
-    margin-left: 0rem;
-    margin-top: 1rem;
-  }
-
-  .fifty_left_image, .fifty_right_image {
-    max-height: 300px;
+    margin: auto;
+    padding-bottom: 1rem;
   }
 }
-
-
-
-/* Disponibilites */
-
-
 
 /* Footer */
 

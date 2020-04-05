@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
     <title>Maison de Vacances à Gigaro - Gallerie</title>
   </head>
@@ -40,101 +41,57 @@
   <div class="images">
 
 <!-- Left Top -->
-    <div class="left">
-      <div class="big_image_left_top">
-        <div class="img_container">
-        </div>
+    <div class="row">
+      <div class="img_container cursor left">
+          <a href="./resources/images/Vue-terrasse.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/Vue-terrasse.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
-      <div class="small_images_left">
-        <div class="image_top_left_top">
-          <div class="img_container">
-            <img src="./resources/images/gallerie/maison.jpg" alt="">
-          </div>
-        </div>
-        <div class="image_bottom_left_top">
-          <div class="img_container">
-            <img src="./resources/images/gallerie/maison.jpg" alt="">
-          </div>
-        </div>
+      <div class="img_container cursor right">
+          <a href="./resources/images/gallerie/maison.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/gallerie/maison.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
     </div>
 
-<!-- Right Top -->
-    <div class="right">
-      <div class="small_images_right">
-        <div class="image_top_right_top">
-          <div class="img_container">
-            <img src="./resources/images/gallerie/maison.jpg" alt="">
-          </div>
-        </div>
-        <div class="image_bottom_right_top">
-          <div class="img_container">
-            <img src="./resources/images/gallerie/maison.jpg" alt="">
-          </div>
-        </div>
+    <div class="row">
+      <div class="img_container cursor left">
+          <a href="./resources/images/Vue-terrasse.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/Vue-terrasse.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
-      <div class="big_image_right_top">
-        <div class="img_container">
-        </div>
+      <div class="img_container cursor right">
+          <a href="./resources/images/gallerie/maison.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/gallerie/maison.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
     </div>
 
-
-<!-- Fifty Top -->
-    <div class="fifty">
-      <div class="fifty_left_image_top">
-        <div class="img_container">
-          <img src="./resources/images/piscine.jpg" alt="">
-        </div>
+    <div class="row">
+      <div class="img_container cursor left">
+          <a href="./resources/images/Vue-terrasse.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/Vue-terrasse.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
-      <div class="fifty_right_image_top">
-        <div class="img_container">
-          <img src="./resources/images/piscine.jpg" alt="">
-        </div>
+      <div class="img_container cursor right">
+          <a href="./resources/images/gallerie/maison.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/gallerie/maison.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
     </div>
 
-<!-- Left Bottom -->
-  <div class="left">
-    <div class="big_image_left_bottom">
-      <div class="img_container">
+    <div class="row">
+      <div class="img_container cursor left">
+          <a href="./resources/images/Vue-terrasse.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/Vue-terrasse.jpg" alt="" class="hover-shadow"/>
+          </a>
+      </div>
+      <div class="img_container cursor right">
+          <a href="./resources/images/gallerie/maison.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+              <img src="./resources/images/gallerie/maison.jpg" alt="" class="hover-shadow"/>
+          </a>
       </div>
     </div>
-    <div class="small_images_left">
-      <div class="image_top_left_bottom">
-        <div class="img_container">
-          <img src="./resources/images/gallerie/maison.jpg" alt="">
-        </div>
-      </div>
-      <div class="image_bottom_left_bottom">
-        <div class="img_container">
-          <img src="./resources/images/gallerie/maison.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Fifty Bottom -->
-  <div class="fifty">
-    <div class="fifty_left_image_bottom">
-      <div class="img_container">
-        <img src="./resources/images/piscine.jpg" alt="">
-      </div>
-    </div>
-    <div class="fifty_right_image_bottom">
-      <div class="img_container">
-        <img src="./resources/images/piscine.jpg" alt="">
-      </div>
-    </div>
-  </div>
-
-  </div>
-
-  <div class="line invisible">
-  </div>
-
-
 
 <!-- Footer -->
 
@@ -143,6 +100,41 @@
     <span>MADIRANE</span>
   </div>
   </footer>
+
+<!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  <script>
+  $('[data-fancybox="gallery"]').fancybox({
+  loop: true,
+  // Disable idle
+  idleTime : 0,
+  // Display only these two buttons
+  buttons : [
+    'info', 'close',"thumbs",
+  ],
+  // Custom caption content
+
+  onInit: function(instance) {
+    // Toggle caption on tap
+    instance.$refs.container.on('touchstart', '[data-fancybox-info]', function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      instance.$refs.container.toggleClass('fancybox-vertical-caption');
+    });
+    // Display caption on button hover
+    instance.$refs.container.on('mouseenter', '[data-fancybox-info]', function(e) {
+      instance.$refs.container.addClass('fancybox-vertical-caption');
+      // Hide caption when mouse leaves caption area
+      instance.$refs.caption.one('mouseleave', function(e) {
+        instance.$refs.container.removeClass('fancybox-vertical-caption');
+      });
+      });
+    }
+
+    });
+  </script>
 
 
 <!-- Scripts -->

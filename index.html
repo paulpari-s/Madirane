@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:300,400,500&display=swap" rel="stylesheet">
     <title>Maison de Vacances à la Croix Valmer, proche de Saint Tropez</title>
   </head>
@@ -79,22 +80,31 @@
 
       <div class="gallerie">
         <div class="article">
-          <div class="img_container">
-            <img src="./resources/images/Vue-terrasse.jpg" alt="Vue dégagée">
+          <div class="img_container cursor ">
+            <a href="./resources/images/Vue-terrasse.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+            	<img src="./resources/images/Vue-terrasse.jpg" alt="" class="hover-shadow"/>
+            </a>
           </div>
           <p>Grâce à une orientation sud/sud-ouest et une vue dégagée sur le massif des maures, vous profitez du soleil jusqu’à ses derniers rayons.</p>
         </div>
         <div class="article">
-          <div class="img_container">
-            <img src="./resources/images/Piscine.jpg" alt="Piscine">
+          <div class="img_container cursor">
+            <a href="./resources/images/Piscine.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+            	<img src="./resources/images/Piscine.jpg" alt="" class="hover-shadow"/>
+            </a>
           </div>
           <p>Belle piscine profonde avec plongeoir, adaptée uniquement pour les enfants de plus de 5 ans sachant nager.</p>
         </div>
         <div class="article">
-          <div class="img_container">
-            <img src="./resources/images/Chambre-principale.jpg" alt="Chambre">
+          <div class="img_container cursor">
+            <a href="./resources/images/Chambre-principale.jpg" data-fancybox="gallery" data-caption="Caption for single image">
+            	<img src="./resources/images/Chambre-principale.jpg" alt="" class="hover-shadow"/>
+            </a>
           </div>
           <p>Grâce à une orientation sud/sud-ouest et une vue dégagée sur le massif des maures, vous profitez du soleil jusqu’à ses derniers rayons.</p>
+        </div>
+      </div>
+
         </div>
       </div>
 
@@ -186,6 +196,41 @@
       <span>MADIRANE</span>
     </div>
     </footer>
+
+<!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script>
+    $('[data-fancybox="gallery"]').fancybox({
+    loop: true,
+    // Disable idle
+    idleTime : 0,
+    // Display only these two buttons
+    buttons : [
+      'info', 'close',"thumbs",
+    ],
+    // Custom caption content
+
+    onInit: function(instance) {
+      // Toggle caption on tap
+      instance.$refs.container.on('touchstart', '[data-fancybox-info]', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        instance.$refs.container.toggleClass('fancybox-vertical-caption');
+      });
+      // Display caption on button hover
+      instance.$refs.container.on('mouseenter', '[data-fancybox-info]', function(e) {
+        instance.$refs.container.addClass('fancybox-vertical-caption');
+        // Hide caption when mouse leaves caption area
+        instance.$refs.caption.one('mouseleave', function(e) {
+          instance.$refs.container.removeClass('fancybox-vertical-caption');
+        });
+        });
+      }
+
+      });
+    </script>
 
   </body>
 </html>
