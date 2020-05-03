@@ -419,10 +419,10 @@ header {
   }
 
   .title_mobile h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 2rem;
     margin-bottom: 0;
-    line-height: 2.8rem;
+    line-height: 2rem;
   }
 }
 
@@ -437,6 +437,14 @@ header {
   .subtitle {
     width: 80%;
     padding: 1rem 0 1rem 0;
+  }
+
+  .subtitle h3 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
   }
 }
 
